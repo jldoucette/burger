@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "root",
-  database: "moviePlannerDB"
+  database: "burgers_db"
 });
 
 connection.connect(function(err) {
@@ -16,4 +16,4 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 
 });
-module.exports(mysql);
+module.exports = connection;
